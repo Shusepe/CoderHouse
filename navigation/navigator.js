@@ -13,12 +13,10 @@ const Tab = createBottomTabNavigator();
 
 function Navigator() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Add" component={AddScreen} />
-        <Tab.Screen name="List" component={ListScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name="Add" component={AddScreen} />
+      <Tab.Screen name="List" component={ListScreen} />
+    </Tab.Navigator>
   );
 }
 

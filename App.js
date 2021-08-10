@@ -9,6 +9,7 @@ import HomeScreen from "./screens/home.screen";
 import ListScreen from "./screens/list.screen";
 import AddScreen from "./screens/add.screen";
 import ViewScreen from "./screens/view.screen";
+import MapScreen from "./screens/map.screen";
 
 import { init } from "./db";
 
@@ -25,11 +26,12 @@ function App() {
   return (
     <Provider store={Store}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="Map">
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Add" component={AddScreen} />
           <Stack.Screen name="List" component={ListScreen} />
           <Stack.Screen name="View" component={ViewScreen} />
+          <Stack.Screen name="Map" component={MapScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
